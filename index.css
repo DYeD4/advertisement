@@ -56,13 +56,14 @@ nav ul {
 nav ul li {
   display: inline;
   padding: 0 1rem;
+  position: relative;
 }
 
-nav ul li.active {
+nav ul li.active > a {
   font-weight: bold;
 }
 
-nav ul li.active a:visited {
+nav ul li.active > a:visited {
   color: #3498db;
 }
 
@@ -73,6 +74,26 @@ a {
 
 a:visited {
   color: #9b59b6;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+ul.dropdown {
+  left: 0;
+  padding: 0.25rem 0;
+}
+
+ul.dropdown li {
+  padding: 0.25rem;
+  display: block;
+}
+
+li:hover > .dropdown {
+  display: block;
 }
 
 /* Add styles for tables */
