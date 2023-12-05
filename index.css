@@ -53,6 +53,16 @@ nav ul {
   padding: 0;
 }
 
+nav ul.main-navigation {
+  display: flex;
+  align-items: center;
+}
+
+nav ul.main-navigation > li:last-child {
+  flex: 1;
+  transform: translateX(-100px);
+}
+
 nav ul li {
   display: inline;
   padding: 0 1rem;
